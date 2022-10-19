@@ -1,11 +1,21 @@
 use itertools::Itertools;
 
+const INPUT: &str = include_str!("./input.txt");
+
 fn read_input(input: &str) -> Vec<u32> {
     input
         .trim()
         .chars()
         .map(|c| c.to_digit(10).unwrap())
         .collect()
+}
+
+pub fn run() {
+    println!("=== Day 1 ===");
+    part1(INPUT);
+    part2(INPUT);
+    println!("=============");
+    println!();
 }
 
 pub fn part1(input: &str) -> u32 {
@@ -48,7 +58,6 @@ mod tests {
     }
     #[test]
     fn part1_works_with_puzzle_input() {
-        const INPUT: &str = include_str!("./input.txt");
         assert_eq!(part1(INPUT), 1136);
     }
 
@@ -62,7 +71,6 @@ mod tests {
     }
     #[test]
     fn part2_works_with_puzzle_input() {
-        const INPUT: &str = include_str!("./input.txt");
-        assert_eq!(part2(INPUT), 4);
+        assert_eq!(part2(INPUT), 10536);
     }
 }

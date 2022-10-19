@@ -1,3 +1,7 @@
 mod day_1;
 
-fn main() {}
+use day_1::day1;
+
+fn main() {
+    day1::run();
+}
