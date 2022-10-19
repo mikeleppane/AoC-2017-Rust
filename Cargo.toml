@@ -10,3 +10,4 @@ authors = ["Mikko Leppänen <mleppan23@gmail.com>"]
 ndarray = "0.15"
 itertools = "0.10"
 regex = "1"
+num = "0.4"
