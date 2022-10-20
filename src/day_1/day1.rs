@@ -37,7 +37,7 @@ pub fn part2(input: &str) -> u32 {
     let inputs = inputs.repeat(2);
 
     for (index, a) in inputs[0..(inputs.len() / 2)].iter().enumerate() {
-        if inputs[(index + 1)..(index + 1 + halfway)].contains(a) {
+        if inputs[(index + halfway)] == *a {
             sum += a;
         }
     }
@@ -64,13 +64,13 @@ mod tests {
     #[test]
     fn part2_works_with_test_input() {
         assert_eq!(part2("1212"), 6);
-        assert_eq!(part2("1221"), 3);
+        assert_eq!(part2("1221"), 0);
         assert_eq!(part2("123425"), 4);
         assert_eq!(part2("123123"), 12);
         assert_eq!(part2("12131415"), 4);
     }
     #[test]
     fn part2_works_with_puzzle_input() {
-        assert_eq!(part2(INPUT), 10536);
+        assert_eq!(part2(INPUT), 1092);
     }
 }

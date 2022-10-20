@@ -1,4 +1,4 @@
-use itertools::{enumerate, sorted, Itertools};
+use itertools::Itertools;
 use regex::Regex;
 
 const TEST_INPUT: &str = include_str!("./test_input.txt");
