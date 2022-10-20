@@ -18,7 +18,7 @@ fn read_input(input: &str) -> Vec<Vec<String>> {
 }
 
 pub fn run() {
-    println!("=== Day 2 ===");
+    println!("=== Day 4 ===");
     part1(INPUT);
     part2(INPUT);
     println!("=============");
