@@ -1,7 +1,9 @@
 use itertools::Itertools;
 use regex::Regex;
 
+#[allow(dead_code)]
 const TEST_INPUT: &str = include_str!("./test_input.txt");
+#[allow(dead_code)]
 const TEST_INPUT_2: &str = include_str!("./test_input_2.txt");
 const INPUT: &str = include_str!("./input.txt");
 

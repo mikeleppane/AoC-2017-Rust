@@ -1,5 +1,6 @@
 use std::str::FromStr;
 
+#[allow(dead_code)]
 const TEST_INPUT: &str = include_str!("./test_input.txt");
 const INPUT: &str = include_str!("./input.txt");
 
