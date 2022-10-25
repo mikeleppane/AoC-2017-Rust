@@ -4,7 +4,7 @@ const INPUT: &str = include_str!("./input.txt");
 
 fn read_input(input: &str) -> Vec<u32> {
     let mut offsets: Vec<u32> = Vec::new();
-    for v in input.split(" ") {
+    for v in input.split(' ') {
         offsets.push(u32::from_str(v.trim()).unwrap());
     }
     offsets
